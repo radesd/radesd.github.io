@@ -67,8 +67,8 @@
 			<br>
 
 			<div class=" row">
-			<div class="col s2"></div>
-			<div class="slider col s8">
+			<div class="col "></div>
+			<div class="slider col s12 m6 offset-m3">
 		          <ul class="slides" style="margin-top: 0px;">
 		          	<li>
 		              <img src="img/g5/8.jpg"  alt="">
@@ -79,18 +79,14 @@
 		            <li>
 		              <img src="img/g5/3.jpg" alt="">
 		            </li>
-		            <li>
-		              <img src="img/g5/4.jpg" alt="">
-		            </li>
+		            
 		            <li>
 		              <img src="img/g5/5.jpg" alt="">
 		            </li>
 		            <li>
 		              <img src="img/g5/6.jpg" alt="">
 		            </li>
-		            <li>
-		              <img src="img/g5/7.jpg" alt="">
-		            </li>
+		           
 		         
 		          </ul>
 		        </div>
@@ -212,6 +208,25 @@
       });
        });
       </script>
+
+      <script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() > 1440){	
+		  $('.slider').height(760);
+          $('.slides').height(720);	
+	}	
+});
+      </script>
+
+      <script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() <= 599){	
+		  $('.slider').height(360);
+          $('.slides').height(320);	
+	}	
+});
+      </script>
+
 
              <script>
 	    function openSlideMenu(){

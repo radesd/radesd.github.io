@@ -68,24 +68,19 @@
 			<br>
 
 			<div class=" row">
-			<div class="col s"></div>
-			<div class="slider col s12">
+			<div class="col m3"></div>
+			<div class="slider col s12 m6">
 		          <ul class="slides" style="margin-top: 0px;">
 		          	<li>
-		              <img src="img/g3/1.jpg"  alt="">
+		              <img src="img/g3/14.jpg"  alt="">
 		            </li>
 		            <li>
 		              <img src="img/g3/2.jpg" alt="">
 		            </li>
 		            <li>
-		              <img src="img/g3/3.jpg" alt="">
-		            </li>
-		            <li>
 		              <img src="img/g3/4.jpg" alt="">
 		            </li>
-		            <li>
-		              <img src="img/g3/5.jpg" alt="">
-		            </li>
+		            
 		            <li>
 		              <img src="img/g3/6.jpg" alt="">
 		            </li>
@@ -104,15 +99,13 @@
 		            <li>
 		              <img src="img/g3/11.jpg" alt="">
 		            </li>
-		            <li>
-		              <img src="img/g3/14.jpg" alt="">
-		            </li>
+		           
 		            <li>
 		              <img src="img/g3/13.jpg" alt="">
 		            </li>
 		          </ul>
 		        </div>
-		        <div class="col "></div>
+		        <div class="col m3"></div>
 		     </div>
 
 	<!-- DETAILS -->
@@ -192,8 +185,8 @@
           // Init Slider
           $('.slider').slider();
 
-          $('.slider').height(400);
-          $('.slides').height(360);	   
+          $('.slider').height(470);
+          $('.slides').height(430);	   
 										
 
 
@@ -232,7 +225,28 @@
        });
       </script>
 
-             <script>
+        <script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() > 1440){	
+		  $('.slider').height(760);
+          $('.slides').height(720);	
+	}	
+});
+      </script>
+
+      <script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() <= 599){	
+		  $('.slider').height(360);
+          $('.slides').height(320);	
+	}	
+});
+      </script>
+
+
+
+
+            <script>
 	    function openSlideMenu(){
 	      document.getElementById('side-menu').style.width = '250px';
 	      document.getElementById('main').style.marginLeft = '250px';

@@ -68,8 +68,7 @@
 			<br>
 
 			<div class=" row">
-			<div class="col s2"></div>
-			<div class="slider col s8">
+			<div class="slider col s12 m8 offset-m2 l8 offset-l2 xl6 offset-xl3">
 		          <ul class="slides" style="margin-top: 0px;">
 		          	<li>
 		              <img src="img/g13/1.jpg"  alt="">
@@ -109,11 +108,10 @@
 		         
 		          </ul>
 		        </div>
-		        <div class="col 2"></div>
 		     </div>
 
 	<!-- DETAILS -->
-
+				<br>
 				<h4 class="center-align">Specifications:</h4>
 				<div class="center-align">
 					<p>Two piece alder body</p>
@@ -188,8 +186,8 @@
           // Init Slider
           $('.slider').slider();
 
-          $('.slider').height(400);
-          $('.slides').height(360);	   
+          $('.slider').height(440);
+          $('.slides').height(400);	   
 										
 
 
@@ -227,6 +225,25 @@
       });
        });
       </script>
+
+      	<script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() > 1440){	
+		  $('.slider').height(760);
+          $('.slides').height(720);	
+	}	
+});
+      </script>
+
+      <script type="text/javascript">
+      	$(document).ready(function(){
+		if ($(window).width() <= 599){	
+		  $('.slider').height(320);
+          $('.slides').height(320);	
+	}	
+});
+      </script>
+
              <script>
 	    function openSlideMenu(){
 	      document.getElementById('side-menu').style.width = '250px';
