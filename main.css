@@ -2,7 +2,7 @@
 .logo-bg img {
 	max-width: 100%;
 	background: #c62828;
-	z-index: ;
+	display: inherit;
 }
 
 body {
@@ -25,9 +25,12 @@ body {
 }
 
 
+a {
+	text-decoration: none;
+}
 
 nav  {
- 	background: black;
+ 	background: #212121;
 	transition: 0.7s;
 	z-index: 9999;
 }
@@ -37,7 +40,6 @@ nav.black {
 }	
 
 nav ul li {
-
 	display: inline-block;
 }
 
@@ -88,10 +90,6 @@ nav ul li {
 .slider .slides {
 	padding-top: 40px;
 	margin-top: -20px;	
-}
-
-.slider .slides img {
-	filter: brightness(80%);
 }
 
 .slider .indicators {
@@ -153,36 +151,49 @@ h2 {
 	max-height: 320px;
 }
 
-footer {
-	background-color: #212121;
+ a {
+	color: white;
 }
-
-
-
 .card-content p {
 	color: black;
 }
 
+
+
+
 .fa-facebook-square:hover {
 	color:#2979ff;
+	font-size: 3.3rem;
+	transition: .2s ;
 }
 
 .fa-youtube-square:hover {
 	color:#b71c1c;
+	font-size: 3.3rem;
+	transition: .2s ;
 }
 
 .fa-instagram:hover {
 	color:#ff8f00;
+	font-size: 3.3rem;
+	transition: .2s ;
 }
 
 .fa-linkedin:hover {
 	color:#01579b;
+	font-size: 3.3rem;
+	transition: .2s ;
 }
 
 
 
 @media(min-width:600px){
-  .open-slide{display:none}
+  .open-slide {
+  	display:none;
+  }
+  .follow {
+	margin-bottom: 30px;
+}
 }
 
 @media(max-width: 600px){
@@ -197,6 +208,10 @@ footer {
 	.slider  img {
 		height: 400px;
 	}
+	  .follow {
+	margin-bottom: 30px;
+}
+
 }
 
 

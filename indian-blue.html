@@ -2,17 +2,15 @@
   <html>
     <head>
       <!--Import Google Icon Font-->
-     
-
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">  -->
-
       <link rel="stylesheet" type="text/css" href="css/materialize.css">
   		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
       <link rel="stylesheet" type="text/css" href="main.css">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,200i,300,300i,400|Roboto:300,300i,400" rel="stylesheet">
+
       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
@@ -39,7 +37,7 @@
 		          <li class="col xl1 l1 s1">
 		          <span class="open-slide" >
 				  <a href="#" onclick="openSlideMenu()">
-				     <svg width="30" height="30" style="margin-top: 15px;margin-left: -15px">
+				     <svg width="30" height="30" style="margin-top: 15px;margin-left:-25px">
 				        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
 				        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
 				        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
@@ -49,11 +47,11 @@
 		          </li>
 		          <li class="col xl1 l1 m1 logo-bg hide-on-small-only valign-wrapper"><img src="img/logo2.png" class="z-depth-2"></li>
 		          <li class="col xl5 l5 s1"></li>
-		          <li class="col xl1 l1 s1 m2"><a href="index.html" class="grey-text text-lighten-3 navb hide-on-small-only">Home</a></li>
-			      <li class="col xl1 l1 s1 m2"><a href="gallery.html" class="grey-text text-lighten-3 navb hide-on-small-only">Gallery</a></li>
-			      <li class="col xl1 l1 s1 m2"><a href="service.html" class="grey-text text-lighten-3 navb hide-on-small-only">About</a></li>
-			      <li class="col xl1 l1 s1 m2"><a href="contact.html" class="grey-text text-lighten-3 navb hide-on-small-only">Contact</a></li>
-			      <li class="col xl1 l1"><img src="img/logo2.png" class="hide-on-med-and-up center-align" style="max-width: 70px;margin-top: 10px;margin-right: 15px;""></li>
+		          <li class="col xl1 l1 s1 m2 center-align"><a href="index.html" class="grey-text text-lighten-3 navb hide-on-small-only">Home</a></li>
+			      <li class="col xl1 l1 s1 m2 center-align active hide-on-small-only"><a href="gallery.html" class="grey-text text-lighten-3 navb hide-on-small-only">Gallery</a></li>
+			      <li class="col xl1 l1 s1 m2 center-align"><a href="service.html" class="grey-text text-lighten-3 navb hide-on-small-only">About</a></li>
+			      <li class="col xl1 l1 s1 m2 center-align"><a href="contact.html" class="grey-text text-lighten-3 navb hide-on-small-only">Contact</a></li>
+			      <li class="col xl1 l1"><a href="index.html"><img src="img/logo2.png" class="hide-on-med-and-up center-align" style="max-width: 70px;margin-top: 10px;margin-right: 15px;"></a></li>
 			      </div>
 			    </ul>
 			    </div>
@@ -61,7 +59,7 @@
 			    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
 			    <a href="index.html">Home</a>
 			    <a href="gallery.html">Gallery</a>
-			    <a href="about.html">About</a>
+			    <a href="service.html">About</a>
 			    <a href="contact.html">Contact</a>
 			  </div>
 			  </div>
@@ -130,34 +128,55 @@
 
 				<br>
 				<br>
-				<div class="center-align"><a href="gallery.html" class="waves-effect waves-light btn red darken-4">Back to Gallery</a></div>
+				<div class="center-align"><a href="gallery.html" class="waves-effect waves-light btn grey darken-4">Back to Gallery</a></div>
 				<br>
 				<br></br>
 
 
 	<!-- FOOTER -->
 
-			<footer class="page-footer headr black darken-4">
-	          <div class="container">
-	            <div class="row">
-	              <div class="col s12 m3 l3 xl3 center-align">
-	                <h5 class="white-text"></h5>
-	                <p class="grey-text text-lighten-5">Enter Email For Newsletter 
-	                 <input id="email5" type="email" class="white-text validate">
-                     <label for="email"></label>
-	                 <button class="btn-small red darken-4" style="margin-left: 10px">Sign Up</button>
-	                 </p>
-	              </div>
-	              <div class="col hide-on-small-only m3 l3 xl3"></div>
-	              <div class="col l4 offset-l2 s12 m6 follow">
+		<footer class="page-footer headr grey darken-4">
+	          <div class="">
+	            <div class="row ">
+	            <div class="col s12 m12 l4 xl4 center-align"><img src="img/logo2.png" style="max-width: 80px; margin-top:15px;">
+	            <ul>
+	            	<p style="" class="grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	            	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	            	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            	consequat. </p>
+	            </ul>
+	            </div>
+
+
+	              <div class="col s12 m12 l4 xl4 follow">
 	                <h5 class="white-text center-align row">Follow Ilianni</h5>
-	                <i class="col s3 m3 fab fa-facebook-square fa-3x -text text-darken-" aria-hidden="true"></i>
-	                <i class="col s3 m3 fab fa-youtube-square fa-3x -text text-darken-4" aria-hidden="true"></i>
-	                <i class="col s3 m3 fab fa-instagram fa-3x gradient" aria-hidden="true"></i>
-	                <i class="col s3 m3 fab fa-linkedin fa-3x -text text-darken-2" aria-hidden="true"></i>	                
+	                
+	                <br>
+	                <a href="https://www.facebook.com/Ilianni-Guitars-284354395107643/" target="_blank">
+	                	<i class="col s3 m2 offset-m2 fab fa-facebook-square fa-3x -text text-darken- center-align" aria-hidden="true"></i>
+	                </a>
+	                <a href="https://www.youtube.com/channel/UCAxTy79UZWKFH-laxGKknXQ" target="_blank">
+	                	<i class="col s3 m2 fab fa-youtube-square fa-3x -text text-darken-4 center-align" aria-hidden="true"></i>
+	                </a>
+	                <a href="https://www.instagram.com/ilianniguitars/" target="_blank">
+	                 	<i class="col s3 m2 fab fa-instagram fa-3x gradient center-align" aria-hidden="true"></i>
+	                </a>
+	                <i class="col s3 m2 fab fa-linkedin fa-3x -text text-darken-2 center-align" aria-hidden="true"></i>	     
+	              </div>
+
+	              <div class="col s12 m12 l4 xl4 center-align">
+	                <h5 class="white-text"></h5>
+	                <h5 class="grey-text text-lighten-5">Newsletter Signup</h5>
+	                
+	                 <input id="email5" type="email" class="white-text validate col s8 offset-s2" placeholder="Email Adress" style="margin-top: 15px;">
+                     <label for="email"></label>
+	                 <button class="btn-small grey darken-3 white-text" style="margin-left: 0px;margin-top: 20px;">Subscribe</button>
+	                 
 	              </div>
 	            </div>
 	          </div>
+	         
+
 
 	          <div class="footer-copyright" style="margin-top: -10px">
 	            <div class="container center-align red-text text-darken-4">
