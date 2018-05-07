@@ -2,7 +2,7 @@
 .logo-bg img {
 	max-width: 100%;
 	background: #c62828;
-	display: inherit;
+	
 }
 
 body {
@@ -107,11 +107,13 @@ nav ul li {
     -webkit-border-radius: 50px;
     border-radius: 50px; 
     z-index: 9999;
-    margin-top: 250px;
+    margin-top: 220px;
     opacity: .5;
   }
  
-
+.content-indicator:hover {
+	opacity: 1.5;
+}
 
 
 
