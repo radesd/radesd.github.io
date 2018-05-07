@@ -87,6 +87,36 @@ nav ul li {
 
 
 
+
+
+.middle-indicator{
+   position:absolute;
+   top:50%;
+   }
+  .middle-indicator-text{
+   font-size: 4.2rem;
+  }
+  a.middle-indicator-text{
+    color:white !important;
+  }
+.content-indicator{
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+    z-index: 9999;
+    margin-top: 250px;
+    opacity: .5;
+  }
+ 
+
+
+
+
+
+
 .slider .slides {
 	padding-top: 40px;
 	margin-top: -20px;	

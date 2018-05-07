@@ -68,6 +68,17 @@
 
 				<!-- SLIDER -->
 				<div class="slider hide-on-small-only" id="main">
+
+
+				     <div class="left">
+				      <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+				     </div>
+				     
+				     <div class="right">
+				     <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+				     </div>
+				   
+
 		          <ul class="slides">
 		           
 		          	<li>
@@ -384,6 +395,26 @@
 	}	
 });
       </script>
+
+      <script type="text/javascript">
+ 
+
+
+		   // move next carousel
+		   $('.moveNextCarousel').click(function(e){
+		      e.preventDefault();
+		      e.stopPropagation();
+		      $('.slider').slider('next');
+		   });
+
+		   // move prev carousel
+		   $('.movePrevCarousel').click(function(e){
+		      e.preventDefault();
+		      e.stopPropagation();
+		      $('.slider').slider('prev');
+		   });
+
+      </script>
       
        <script>
 	    function openSlideMenu(){
@@ -396,6 +427,8 @@
 	      document.getElementById('main').style.marginLeft = '0';
 	    }
 	  </script>
+
+
 
     </body>
   </html>
